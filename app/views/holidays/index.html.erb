@@ -1,1 +1,10 @@
-<h1>Holidays</h1>
+<h1><%= @holidays.inspect %></h1>
+<% @holidays.each do |holiday| %>
+  <div class="booyah-box">
+    <h1><%= holiday.destination %></h1><br />
+    <i><%= holiday.month %></i><br />
+    <p><%= holiday.transport %></p><br />
+  </div>
+
+  <hr />
+<% end %>
