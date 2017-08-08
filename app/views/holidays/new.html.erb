@@ -1,0 +1,8 @@
+<h1>Enter Your Holiday Details</h1>
+<%= simple_form_for @holiday do |f| %>
+  <%= f.input :destination %>
+  <%= f.input :month %>
+  <%= f.input :transport %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
